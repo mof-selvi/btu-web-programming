@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="form_verileri.php" method="POST">
+            İsim: <input name="username" type="text"><br>
+            Şifre: <input name="userpass" type="password"><br>
+            <button type="submit">Gönder!</button>
+        </form>
+
+        <div id="cevap">###</div>
+        <button onclick="sahte_form2()">JS ile form gönder</button>
+    </body>
+
+
+
+    <script>
+        // f1 = f2 = f3 = f4
+        function f1(a,b)
+        {
+            return a*b;
+        }
+
+        var f2 =function(a,b)
+                {
+                    return a*b;
+                }
+        
+
+        var f3 = (a,b) => a*b;
+
+        var f4 = (a,b) => {return a*b};
+
+        // var f5 = x => x*2;
+
+
+        console.log(f1(3,5));
+        console.log(f2(3,5));
+        console.log(f3(3,5));
+        console.log(f4(3,5));
+    </script>
+
+    <script src="scripts.js"></script>
+</html>
